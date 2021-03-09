@@ -1,0 +1,32 @@
+%YAML 1.1
+# ^-- ATTN: [2019-12-31] If you use a later version, Github will fail
+#     with a bogus error message "You have an error in your yaml syntax".
+# -*- coding: UTF-8, tab-width: 4 -*-
+---
+
+on:
+    push:
+        branches:
+            -   '*'
+
+    schedule:
+        -   cron:  '12 3 * * *'
+
+jobs:
+    job_build_tunsocks:
+        runs-on: ubuntu-20.04
+        steps:
+            -   name: 'Check out the repo files'
+                uses: 'actions/checkout@v2'
+
+            -   name: 'Actually build it'
+                run: ./build.sh
+
+            -   name: 'Upload the results as artifact'
+                uses: actions/upload-artifact@v1
+                with:
+                    name: tunsocks
+                    path: result
+
+
+...
