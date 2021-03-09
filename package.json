@@ -1,0 +1,21 @@
+{ "name": "tunsocks-build-on-github",
+  "version": "0.0.1",
+  "description": "Build tunsocks on Github",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/tunsocks-build-on-github/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/tunsocks-build-on-github.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/tunsocks-build-on-github/issues"
+  },
+  "contributors": [],
+
+  "private": true, "license": "ISC",
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
